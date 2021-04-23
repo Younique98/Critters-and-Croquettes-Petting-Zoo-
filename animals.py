@@ -153,7 +153,7 @@ class Donkey:
 Paul = Donkey("Mr Paul", "Donkey" )
 # Paul.name = "Mr Paul"
 # Paul.species = "Donkey"
-print(Paul)
+print(Paul.name)
 
 class Llama:
 
