@@ -3,14 +3,19 @@ from datetime import date
 
 class HognoseSnake:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, food):
         # Establish the properties of each animal
         # with a default value
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.slithering = True
-Grace = HognoseSnake("Miss Grace", "Snake" )
+        self.food = food
+
+    def feed(self):
+      print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+Grace = HognoseSnake("Miss Grace", "Snake", "snake chow" )
 # Grace.name = "Miss Grace"
 # Grace.species = "Snake"
-print(Grace)
+print(Grace.feed())
