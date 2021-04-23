@@ -181,6 +181,7 @@ Lucy = Goat()
 Lucy.name = "Lucy"
 Lucy.species = "goat"
 print(Lucy)
+print(Lucy.name)
 
 class Goose:
 
